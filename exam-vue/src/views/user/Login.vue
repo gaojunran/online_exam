@@ -133,6 +133,7 @@ const login = async () => {
 
   } catch (error) {
     loading.value = false;
+    console.log(error)
     //登录失败的提示信息
     ElNotification({
       title: '登录失败！',

@@ -22,7 +22,7 @@ public class UserTest {
 
     @Test
     void test() {
-        System.out.println(encoder.encode("123456"));
+        System.out.println(encoder.encode("nebula"));
     }
 
     @Test

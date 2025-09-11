@@ -42,10 +42,10 @@ public class ProjectExceptionAdvice {
         return new ApiResult<>(e.getCode(), null, e.getMessage());
     }
 
-    // 除了自定义的异常处理器，保留对Exception类型的异常处理，用于处理非预期的异常
-    @ExceptionHandler(Exception.class)
-    public ApiResult<Object> doOtherException(Exception e) {
-        return new ApiResult<>(Code.SYSTEM_UNKNOWN_ERROR, null, Code.ERROR_MSG);
-    }
+//    // 除了自定义的异常处理器，保留对Exception类型的异常处理，用于处理非预期的异常
+//    @ExceptionHandler(Exception.class)
+//    public ApiResult<Object> doOtherException(Exception e) {
+//        return new ApiResult<>(Code.SYSTEM_UNKNOWN_ERROR, null, Code.ERROR_MSG);
+//    }
 
 }

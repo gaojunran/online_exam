@@ -1,0 +1,8 @@
+layout {
+  pane command="bash" {
+    args "-c" "just dev-vue"
+  }
+  pane command="bash" {
+    args "-c" "just dev-springboot"
+  }
+}

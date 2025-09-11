@@ -3,29 +3,32 @@ spring:
     date-format: yyyy-MM-dd
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/online_exam
+    url: jdbc:mysql://123.249.70.0:3306/online_exam
     username: root
-    password: xxxx
+    password: nebula
     type: com.alibaba.druid.pool.DruidDataSource
   mail:
-    host: smtp.qq.com  # 服务器 不用修改
-    username: xxxxx # 邮箱账号
-    password: xxxxx # 授权码
+    host: smtp.126.com  # 服务器 不用修改
+    username: nebula2021@126.com # 邮箱账号
+    password: UK2RN7PV9dtHHP7h # 授权码
     default-encoding: utf-8
     protocol: smtp
     port: 465
     properties:
       mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
   redis:
-    host: localhost
+    host: 123.249.70.0
     port: 6379
     database: 0
+    username:
+    password: nebula
     jedis:
       pool:
         max-active: 8 # 最大连接数
         max-wait: 1ms # 连接池最大阻塞等待时间
         max-idle: 4   # 连接池中的最大空闲连接
         min-idle: 0   # 连接池中的最小空闲连接
+
 
 # 分页插件
 pagehelper:
