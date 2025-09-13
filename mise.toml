@@ -2,3 +2,20 @@
 java = "corretto-8.462.08.1"
 maven = "latest"
 node = "22.14.0"
+
+[tasks.dev-vue]
+run = [
+  "killport 5173",
+  "pnpm install && pnpm run dev"
+]
+dir = "exam-vue"
+
+[tasks.dev-spring]
+run = [
+  "killport 8080",
+  "mvn spring-boot:run"
+]
+dir = "exam-springboot"
+
+[tasks.dev]
+run = "zellij -l zellij.kdl"

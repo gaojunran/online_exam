@@ -1,8 +1,8 @@
 layout {
   pane command="bash" {
-    args "-c" "just dev-vue"
+    args "-c" "mise run dev-vue"
   }
   pane command="bash" {
-    args "-c" "just dev-springboot"
+    args "-c" "mise run dev-spring"
   }
 }
